@@ -5,7 +5,7 @@ import {Link} from 'react-router-dom'
 function PostCard ({$id,title,faturedimage}) {
   return (
     <Link to={`/post/${$id }`}>
-        <div className='w-full  rounded-xl p-14 md:p-4 bg-orange-300 gap-4 transition-all ease-in-out hover:bg-orange-100 duration-500 shadow-xl shadow-violet-500'>
+        <div className='w-full  rounded-xl p-14 md:p-4 bg-orange-300 gap-4 transition-all ease-in-out hover:bg-orange-100 duration-500 shadow-xl shadow-violet-400 hover:shadow-violet-700'>
             <div className='w-full justify-center mb-4 '>
                 <img src={service.getFilePreview(faturedimage)} alt={title} className=' rounded-xl' />
             </div>
