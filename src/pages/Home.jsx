@@ -31,9 +31,9 @@ const Home = () => {
     return (
     <div className='w-full py-8'>
             <Container>
-                <div className='flex flex-wrap'>
+                <div className='flex flex-wrap flex-col justify-center items-center sm:flex-row'>
                     {post.map((post) => (
-                        <div key={post.$id} className='p-2 w-1/4'>
+                        <div key={post.$id} className='p-2 w-full md:w-1/4'>
                             <PostCard {...post} />
                         </div>
                     ))}
